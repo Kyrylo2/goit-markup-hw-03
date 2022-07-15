@@ -353,6 +353,7 @@ body {
 .portfolio-cards {
   display: flex;
   flex-wrap: wrap;
+
   justify-content: space-between;
 }
 
@@ -360,7 +361,7 @@ body {
   display: flex;
   flex-direction: column;
 
-  width: 370px;
+  max-width: 370px;
 
   background-color: var(--white-color);
   border: 1px solid var(--portfolio-border-color);
@@ -401,7 +402,6 @@ body {
   color: var(--title-text-color);
   border-radius: 4px;
   border: 0;
-  margin: auto 8px;
 
   padding: 8px 22px;
 
@@ -414,6 +414,10 @@ body {
   letter-spacing: 0.03em;
 
   cursor: pointer;
+}
+
+.all-filter-radio-buttons li:not(:last-child) {
+  margin-right: 8px;
 }
 
 .filter-radio-button.active {
