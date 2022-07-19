@@ -62,7 +62,6 @@ body {
 /* Стиль хедера */
 
 .page-header {
-  background-color: var(--white-color);
   border-bottom: 1px solid #ececec;
   display: flex;
   height: 80px;
@@ -130,6 +129,7 @@ body {
 
 .contact-nav {
   display: flex;
+  margin-left: auto;
 }
 
 .contact-nav a {
@@ -148,7 +148,7 @@ body {
   color: var(--blue-color);
 }
 
-.contact-nav .tel {
+.contact-nav li:last-child {
   margin-left: 50px;
 }
 
@@ -176,7 +176,6 @@ body {
   color: var(--white-color);
 
   margin-bottom: 30px;
-  /* margin-top: 200px; */
 }
 
 /* Стиль кнопки */
@@ -186,7 +185,6 @@ button {
   margin: 0 auto;
   padding: 10px 32px;
   cursor: pointer;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
 }
@@ -278,8 +276,6 @@ button {
 
 .team .team-box {
   background-color: var(--white-color);
-  /* material shadow v1 */
-
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -295,8 +291,6 @@ button {
   font-size: 16px;
   line-height: 1.18;
   margin-bottom: 10px;
-  /* identical to box height */
-
   text-align: center;
 
   color: var(--title-text-color);
@@ -305,7 +299,6 @@ button {
 .team .team-position {
   font-size: 16px;
   line-height: 1.18;
-  /* identical to box height */
   text-align: center;
   color: var(--main-text-color);
 }
@@ -317,12 +310,6 @@ button {
   padding: 60px 0;
 }
 
-.page-footer .container {
-  display: flex;
-  flex-direction: column;
-  align-content: flex-start;
-}
-
 .page-footer .logo {
   margin-bottom: 20px;
 }
@@ -331,14 +318,11 @@ button {
   margin-bottom: 9px;
 }
 
-/* .footer-contacts {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-} */
-
 .footer-address {
-  font-size: 14px;
+  margin-top: 20px;
+}
+
+.footer-address a {
   line-height: 1.71;
   font-style: normal;
 }
@@ -403,21 +387,15 @@ button {
 .all-filter-radio-buttons {
   display: flex;
   justify-content: center;
-  gap: 6px;
+  gap: 8px;
   margin-bottom: 50px;
 }
-
-/* .all-filter-radio-buttons li:not(:last-child) {
-  margin-right: 6px;
-} */
 
 .filter-radio-button {
   background-color: var(--filter-background-color);
   color: var(--title-text-color);
-  border-radius: 4px;
-  border: 0;
 
-  padding: 8px 22px;
+  padding: 6px 22px;
 
   font-family: var(--main-font);
   font-weight: 500;
@@ -426,8 +404,6 @@ button {
   border-color: var(--filter-background-color);
   text-align: center;
   letter-spacing: 0.03em;
-
-  cursor: pointer;
 }
 
 .filter-radio-button.active {
